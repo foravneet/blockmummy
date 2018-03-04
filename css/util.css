@@ -1,0 +1,142 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../img/desert.jpeg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+  line-height: 30px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}  
+
+
+/*api start*/
+
+.json-key {
+  color: brown;
+}
+
+.json-value {
+  color: navy;
+}
+
+.json-string {
+  color: olive;
+}
+/*api end*/
+
+/* pyramid */
+.div-wrapper {
+    position: relative;
+    height: 80%;
+}
+
+div.image-half {
+   content:url(../img/pyramid-1-half.png);
+   float:left;
+   display: inline;   
+    position: absolute;
+    left: -34px;
+    bottom: -42px;   
+}
+div.image-big {
+   content:url(../img/pyramid-1-big.png);
+   float:left;
+   display: inline;    
+    position: absolute;
+    left: 50;
+    bottom: 70;      
+}
+div.image-medium {
+   content:url(../img/pyramid-1-medium.png);
+   float:left;
+   display: inline;  
+    position: absolute;
+    left: 200;
+    bottom: 140;  
+}
+div.image-small {
+   content:url(../img/pyramid-1-small.png);
+   float:left;
+   display: inline;    
+    position: absolute;
+    left: 350;
+    bottom: 210;  
+}
+a.image-orig {
+   content:url(../img/pyramid-orig.png);
+   float:left;
+   display: inline;   
+    position: absolute;
+    left: 0;
+    bottom: 0;  
+}
+/* mummy scroll */
+
+* {
+  margin: 0;
+}
+
+#bar {
+  height: 77px;
+  background:  0px 0px url('../img/mummy.png') repeat-x;
+  -webkit-animation: scroll 10s linear infinite;
+  animation: scroll 10s linear infinite;
+    
+    left: 0;
+    position: absolute;
+    top: 660px;
+    width: 50%;
+    /* border: 3px solid #73AD21;    */
+}
+#bar.stop{
+    -webkit-animation: scrollStop 0s linear ;
+    animation: scrollStop 0s linear infinite;
+}
+
+@-webkit-keyframes scroll {
+  to {background-position: 210px 0;}
+  from {background-position: 0 0;}
+}
+
+@keyframes scroll {
+  to {background-position: 210px 0;}
+  from {background-position: 0 0;}
+}
+
+@-webkit-keyframes scrollStop {
+  to {background-position: 210px 0;}
+  from {background-position: 0 0;}
+}
+
+@keyframes scrollStop {
+  to {background-position: 210px 0;}
+  from {background-position: 0 0;}
+}
